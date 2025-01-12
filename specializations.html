@@ -10,6 +10,7 @@
     body {
       background-image: url(images/black-painted-wall-textured-background.jpg);
       background-size: cover; 
+      overflow: hidden; 
     }
 
     p {
@@ -25,19 +26,14 @@
     }
 
     .container {
-
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-
-
     }
 
     .boxs {
       background-image: url(images/ccccccccccccccccccccccccccccccccccccccccc.jpg);
       background-size: cover;
-      width: 200px;
-      height: 200px;
       border-style: double;
       text-align: center;
       justify-content: center;
@@ -45,6 +41,7 @@
       margin: 60px;
       width: 200px;
       height: 500px;
+      transform: translateY(-30px);
     }
 
     .go{
@@ -52,7 +49,9 @@
  border-radius: 10px;
  cursor:pointer;
 }
-
+.mark{
+  transform: translateY(-50px);
+}
     
   </style>
 </head>
@@ -147,8 +146,9 @@
         <th></th>
       </tr>
   </table>
-        <p>For Help:-</p><a href="forms.html"><img src="images/mark.jpg" alt="mark" class="mark" width="50px" height="50px"><br></a>         
-               
+  <div class="mark">
+        <p>For Help:-</p><a href="forms.html"><img src="images/mark.jpg" alt="mark" width="50px" height="50px"><br></a>         
+      </div>    
                
 
 
