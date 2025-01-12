@@ -1,0 +1,1 @@
+ITRoots is a website created to help students and individuals who are unsure about which IT specialization to pursue. It provides valuable resources and detailed information about different IT fields, making it easier to explore options and decide on the best path based on personal interests and career goals.
