@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Library</title>
+    <link rel="stylesheet" href="navstyle.css">
+    <style>
+      body{
+        background-image: url(images/black-painted-wall-textured-background.jpg);
+        background-size: cover;
+      }
+ .content {
+    position: absolute;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    background-color: #e7e7e7;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+.content ul li a:hover {
+  color: #007BFF;
+}
+/* Positioning for specific sections */
+#cs-resources {
+    top: 200px;
+    left: 200px;
+}
+
+#se-resources {
+    top: 200px;
+    left: 700px;
+}
+
+#cyber-resources {
+    top: 200px;
+    left: 1380px;
+}
+
+#ai-resources {
+    top: 600px;
+    left: 520px;
+}
+
+#game-resources {
+    top: 600px;
+    left: 1035px;
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="images/it.png" alt="Logo" class="logo">
+      <h1>ITRoots</h1>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="specializations.html">Specializations</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="success.html">Success Stories</a></li>
+      <li><a href="resources.html">Resource Library</a></li>
+    </ul>
+  </nav>
+
+  <div id="cs-resources" class="content">
+    <h2>Computer Science Resources</h2>
+    <ul>
+      <li><a href="https://cs50.harvard.edu/x/">CS50 - Harvard's Intro to Computer Science</a></li>
+      <li><a href="https://www.geeksforgeeks.org/">GeeksforGeeks - CS Tutorials and Resources</a></li>
+      <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/">MIT OpenCourseWare - EECS Courses</a></li>
+      <li><a href="https://www.w3schools.com/">W3Schools - Programming Tutorials</a></li>
+      <li><a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition" target="_blank">
+        Introduction to Algorithms by Thomas H. Cormen et al.</a></li>
+    </ul>
+  </div>
+
+  <div id="se-resources" class="content">
+    <h2>Software Engineering Resources</h2>
+    <ul>
+      <li><a href="https://www.udemy.com/course/software-engineering/">Udemy - Software Engineering Bootcamp</a></li>
+      <li><a href="https://www.coursera.org/specializations/software-development">Coursera - Software Development Specialization</a></li>
+      <li><a href="https://martinfowler.com/books.html">Martin Fowler’s Software Engineering Books</a></li>
+      <li><a href="https://github.com/topics/software-engineering">GitHub Topics - Software Engineering Projects</a></li>
+      <li>  <a href="https://www.oreilly.com/library/view/clean-code-a/9780136083238/" target="_blank">
+        Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin</a></li>
+    </ul>
+  </div>
+
+  <div id="cyber-resources" class="content">
+    <h2>Cybersecurity Resources</h2>
+    <ul>
+      <li><a href="https://www.coursera.org/specializations/it-security">Coursera - IT Security Specialization</a></li>
+      <li><a href="https://www.cybrary.it/">Cybrary - Cybersecurity Training</a></li>
+      <li><a href="https://www.kali.org/">Kali Linux - Penetration Testing Tools</a></li>
+      <li><a href="https://owasp.org/">OWASP - Open Web Application Security Project</a></li>
+      <li> <a href="https://nostarch.com/hacking2.htm" target="_blank">
+        Hacking: The Art of Exploitation by Jon Erickson</a></li>
+    </ul>
+  </div>
+
+  <div id="ai-resources" class="content">
+    <h2>Artificial Intelligence Resources</h2>
+    <ul>
+      <li><a href="https://www.deeplearning.ai/">DeepLearning.AI - AI Courses</a></li>
+      <li><a href="https://www.tensorflow.org/">TensorFlow - Machine Learning Framework</a></li>
+      <li><a href="https://towardsdatascience.com/">Towards Data Science - AI Blog</a></li>
+      <li><a href="https://www.kaggle.com/">Kaggle - AI Datasets and Competitions</a></li>
+      <li><a href="https://www.pearson.com/store/p/artificial-intelligence-a-guide-to-intelligent-systems/P100000347212" target="_blank">
+      A Guide to Intelligent Systems by Michael Negnevitsky</a></li>
+    </ul>
+  </div>
+
+  <div id="game-resources" class="content">
+    <h2>Game Development Resources</h2>
+    <ul>
+      <li><a href="https://learn.unity.com/">Unity Learn - Game Development Platform</a></li>
+      <li><a href="https://www.unrealengine.com/en-US/online-learning">Unreal Engine - Online Learning</a></li>
+      <li><a href="https://www.gamedev.net/">GameDev.net - Developer Resources</a></li>
+      <li><a href="https://itch.io/">Itch.io - Indie Game Development Platform</a></li>
+      <li><a href="https://www.crcpress.com/Game-Engine-Architecture/Gregory/p/book/9781138035454" target="_blank">
+        Game Engine Architecture by Jason Gregory</a></li>
+    </ul>
+  </div>
+</body>
+</html>

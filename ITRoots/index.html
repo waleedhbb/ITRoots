@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style -->
+    <style>
+body {
+            height: 100%;
+            display: flex;
+            justify-content: center; 
+            align-items: center;           
+            background-image: url(images/loginbg.jpg);
+            background-size: cover;         
+        }
+ .login-container {
+    transform: translateY(310px);
+    background-color: rgba(255, 255, 255, 0.850);
+     padding: 70px;
+    border-radius: 10px;
+    text-align: center;
+ }
+input{
+    
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+span{
+    display: block;
+}
+h1,hr{
+    font-size: 35px;
+    transform: translateY(-20px);
+}
+#telemsg{
+    color:rgb(21, 255, 0);
+}
+    </style>
+
+   <!-- script -->
+    <script>
+          
+        function validateLogin(){
+            var specialChars = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '-', '=', '+'];
+            var user = document.getElementById('username').value;
+            var pass = document.getElementById('password').value;
+            var isValid = true;
+
+            var hasSpec = false;
+            for(var i=0;i<specialChars.length;i++){
+            if(pass.includes(specialChars[i])){
+                document.getElementById('passerror').innerHTML = "";
+                hasSpec = true;
+                break;
+        }
+    }
+
+    if (user.length === 0 && pass.length === 0) {
+        document.getElementById('usererror').innerHTML = "Username cannot be empty";
+        document.getElementById('passerror').innerHTML = "Password cannot be empty";
+        isValid = false;
+    } else {
+        if (user.length === 0) {
+            document.getElementById('usererror').innerHTML = "Username cannot be empty";
+            isValid = false;
+        }
+        if (pass.length === 0) {
+            document.getElementById('passerror').innerHTML = "Password cannot be empty";
+            isValid = false;
+        }
+    }
+             if(pass.length < 6){
+                document.getElementById('passerror').innerHTML = "Password must be atleast 6 characters";
+                isValid = false;
+            }
+            else if(!hasSpec){
+                document.getElementById('passerror').innerHTML = "Password must contain a Special Character(!@#$%^&*()_-+=)";
+                isValid = false;
+            }
+            
+            
+            if(isValid){
+                var count = 3;
+                var interval = setInterval(function() {
+                    
+                    document.getElementById('telemsg').innerHTML = `Logged in Successfully, Teleporting home in ${count} ...`;
+                    count--;
+                    if (count === 0){
+                        clearInterval(interval);
+                        toHome();
+                    }
+                }, 1000);
+            }
+            return false;  
+        }
+        function toHome(){
+            window.location.href = "home.html";
+        }
+    </script>
+
+</head>
+<body>
+    <div class="login-container">
+ <form id="loginform" onsubmit="return validateLogin()">
+    <h1 id="welcome">Welcome to ITRoots</h1><hr>
+    <h1>Login</h1>
+    <input type = "text" placeholder="Username" id="username"><span id="usererror" style="color:red"></span><br>
+    <input type = "password" placeholder="Password"id="password"><span id="passerror" style="color:red"></span><br>
+    <button type="submit">Login</button>
+    <h2 id="telemsg"></h2>
+ </form>
+
+
+    </div>
+</body>
+</html>

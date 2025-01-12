@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="navstyle.css">
+  <style>
+    body {
+background-image: url(images/2562696.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-color:powderblue;
+    }
+    .h1home{
+      color: aliceblue;
+font-size: 70px;
+      transform: translateY(150px);
+      margin: 3%;
+font-style: italic;
+    }
+    .p1home{
+      color: aliceblue;
+      margin: 3%;
+      transform: translateY(120px);
+font-weight: bold;
+font-size: 20px;
+    }
+    .video{
+      width: 650px;
+transform: translateX(1300px);
+margin-top: -11%;
+    }
+    .pos{   
+transform: translateY(px);
+    }
+.tags{
+  transform: translateY(100px);
+}
+.tag{
+  background-color: rgba(128, 128, 128, 0.219); /* Semi-transparent black background */
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+            border-radius: 30px;
+            padding: 10px 15px;
+            font-size: 20px;
+            cursor: pointer;
+            margin:5px;
+            
+}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="images/it.png" alt="Logo" class="logo">
+      <h1>ITRoots</h1>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="specializations.html">Specializations</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="success.html">Success Stories</a></li>
+      <li><a href="resources.html">Resource Library</a></li>
+    </ul>
+  </nav>
+
+  <div class="pos">
+    <h1 class="h1home">Discover IT Specializations<br> and Elevate Your Career</h1>
+    <p class="p1home">Explore detailed guides and resources on Software Engineering, <br>Cybersecurity, Artificial Intelligence, Game Development, <br>and more. Start your journey with expert recommendations <br>and success stories tailored to your growth in IT.</p>
+</div>
+
+
+<video src="home.mp4" class="video" autoplay controls muted></video>
+
+  <div class="tags">
+      <a href="specializations/cs.html"><button class= "tag">Computer Science</button></a>
+      <a href="specializations/se.html"><button class= "tag">Software Enginner</button></a><br>
+      <a href="specializations/cys.html"><button class="tag">Cyber Security</button></a>
+      <a href="specializations/ai.html"><button class= "tag">Artificial Intelligence</button></a>
+      <a href="specializations/game.html"><button class="tag">Game Development</button></a>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
