@@ -9,8 +9,7 @@
   <style>
     body {
       background-image: url(images/black-painted-wall-textured-background.jpg);
-      background-size: cover; 
-      overflow: hidden; 
+      background-size: cover;
     }
 
     p {
@@ -18,45 +17,24 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-     color:white;
+      color: white;
     }
 
     h2 {
       color: #333;
     }
 
-    .container {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
+    .go {
+      font-size: 20px;
+      border-radius: 10px;
+      cursor: pointer;
     }
-
-    .boxs {
-      background-image: url(images/ccccccccccccccccccccccccccccccccccccccccc.jpg);
-      background-size: cover;
-      border-style: double;
-      text-align: center;
-      justify-content: center;
-      padding: 20px;
-      margin: 60px;
-      width: 200px;
-      height: 500px;
-      transform: translateY(-30px);
-    }
-
-    .go{
- font-size: 20px;
- border-radius: 10px;
- cursor:pointer;
-}
-.mark{
-  transform: translateY(-50px);
-}
-    
   </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <nav class="navbar">
     <div class="navbar-logo">
       <img src="images/it.png" alt="Logo" class="logo">
@@ -72,86 +50,82 @@
     </ul>
   </nav>
 
-
   <h1 style="text-align: center; font-style: italic; color: aliceblue;">Specializations</h1>
-  <h2 style="text-align: center; color: aliceblue;">Discover the journeys of IT enthusiasts who transformed their
-    futures.</h2>
-  <table>
-    <tr>
-      <td>
-        <div class="container">
-          <div class="boxs cs" style="margin-left: 160px;">
-            <img src="images/download.jpg" alt="cs logo" width="200px" height="150px">
-            <p style="background-color: transparent; color: aliceblue; padding-left: 15px;"><b>Computer Science </b>is the study of computers and
-              computational systems, covering topics like programming,
-              algorithms, artificial intelligence, and cybersecurity. It combines theory and practical skills to solve
-              real-world problems through technology.</p>
-              <br><br><br>
-              <a href="specializations/cs.html"><input type="submit" value="GO!" class="go"></a>
+  <h2 style="text-align: center; color: aliceblue;">Discover the journeys of IT enthusiasts who transformed their futures.</h2>
+
+  <div class="container" style="margin-top: 20px;">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card" style="width: 15rem;">
+          <img src="images/download.jpg" class="card-img-top" alt="cs logo">
+          <div class="card-body">
+            <h5 class="card-title">Computer Science</h5>
+            <p class="card-text" style="background-color: transparent; color: black; padding-left: 15px;">
+              The study of computers and computational systems, focusing on programming, algorithms, cybersecurity, and artificial intelligence. It merges theory with practical applications to develop solutions for real-world challenges using technology.
+            </p>
+            <a href="specializations/cs.html" class="btn btn-primary">Go!</a>
           </div>
-      </td>
-      <td>
-        <div class="boxs se">
-          <img src="images/enginlogo.jpg" alt="se logo" width="200px" height="150px">
-          <p style="background-color: transparent; color: aliceblue;"><b>Software Engineering</b> is the discipline of designing,
-            developing, and
-            maintaining software systems. It combines computer science and engineering principles to create reliable and
-            efficient solutions, covering areas like software design, coding, testing, and project management.
-            <br><br><br>
-            <a href="specializations/se.html"><input type="submit" value="GO!" class="go"></a>
         </div>
-      </td>
-      </td>
-      <td>
-        <div class="boxs cys">
-          <img src="images/Business, Technology, Internet and Network Stock Footage Video.jpg" alt="cys logo"
-            width="200px" height="150px">
-          <p style="background-color: transparent; color: aliceblue;"><b>Cybersecurity</b> is the practice of protecting systems,
-            networks, and data from digital threats and attacks. It involves securing information, detecting
-            vulnerabilities, and responding to risks to ensure data integrity and privacy.
-            <br><br><br><br>
-            <a href="specializations/cys.html"><input type="submit" value="GO!" class="go"></a>
-        </div>
-      </td>
-
-      <td>
-        <div class="boxs ai">
-          <img
-            src="images/Ai Technology Digital Artificial Intelligence Future Circuit Electronic Colorful Vector Logo Design.jpg"
-            alt="ai logo" width="200px" height="150px">
-          <p style="background-color: transparent; color: aliceblue;"><b>Artificial Intelligence</b> is the field of computer science
-            focused on creating systems that can perform tasks that typically require human intelligence. This includes
-            learning, problem-solving, speech recognition, and decision-making, using techniques like machine learning
-            and neural networks.
-            <br><br>
-            <a href="specializations/ai.html"><input type="submit" value="GO!" class="go"></a>
-        </div>
-      </td>
-
-      <td>
-        <div class="boxs xrgd">
-          <img src="images/xrgdlogo.jpg" alt="xrgd logo" width="200px" height="150px">
-          <p style="background-color: transparent; color: aliceblue;"><b>Game Development</b> is the comprehensive process of designing,
-              creating, and programming video games, which includes aspects like gameplay mechanics, level design, story
-              development, graphics, sound, and user interface, utilizing game engines such as Unity or Unreal Engine to
-              craft engaging and interactive digital experiences.
-              <br>
-              <a href="specializations/game.html"><input type="submit" value="GO!" class="go"></a>
-        </div>
-      </td>
-
-
       </div>
-      <tr>
-        <th></th>
-      </tr>
-  </table>
-  <div class="mark">
-        <p>For Help:-</p><a href="forms.html"><img src="images/mark.jpg" alt="mark" width="50px" height="50px"><br></a>         
-      </div>    
-               
 
+      <div class="col-sm">
+        <div class="card" style="width: 15rem;">
+          <img src="images/enginlogo.jpg" class="card-img-top" alt="se logo">
+          <div class="card-body">
+            <h5 class="card-title">Software Engineering</h5>
+            <p class="card-text" style="background-color: transparent; color: black; padding-left: 15px;">
+              The field of designing, building, and maintaining software systems. It applies engineering and computer science principles to produce reliable and efficient software, covering design, coding, testing, and project management.
+            </p>
+            <a href="specializations/se.html" class="btn btn-primary">Go!</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-sm">
+        <div class="card" style="width: 15rem;">
+          <img src="images/Business, Technology, Internet and Network Stock Footage Video.jpg" class="card-img-top" alt="cys logo">
+          <div class="card-body">
+            <h5 class="card-title">Cybersecurity</h5>
+            <p class="card-text" style="background-color: transparent; color: black; padding-left: 15px;">
+              The practice of protecting systems, networks, and sensitive data from cyber threats and attacks by securing information, identifying vulnerabilities, and managing risks to maintain data integrity, confidentiality, and privacy effectively.
+            </p>
+            <a href="specializations/cys.html" class="btn btn-primary">Go!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card" style="width: 15rem;">
+          <img src="images/Ai Technology Digital Artificial Intelligence Future Circuit Electronic Colorful Vector Logo Design.jpg" class="card-img-top" alt="ai logo">
+          <div class="card-body">
+            <h5 class="card-title">Artificial Intelligence</h5>
+            <p class="card-text" style="background-color: transparent; color: black; padding-left: 15px;">
+              The computer science field focused on creating systems capable of tasks requiring human intelligence, like learning, decision-making, speech recognition, and problem-solving, utilizing methods such as machine learning and neural networks.
+            </p>
+            <a href="specializations/ai.html" class="btn btn-primary">Go!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="card" style="width: 15rem;">
+          <img src="images/xrgdlogo.jpg" class="card-img-top" alt="xrgd logo">
+          <div class="card-body">
+            <h5 class="card-title">Game Development</h5>
+            <p class="card-text" style="background-color: transparent; color: black; padding-left: 15px;">
+              The process of designing, programming, and creating video games, including gameplay mechanics, level design, story development, graphics, sound, and user interface, using engines like Unity or Unreal Engine to engage users.
+            </p>
+            <a href="specializations/game.html" class="btn btn-primary">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>For Help:</p>
+  <a href="forms.html">
+    <img src="images/mark.jpg" alt="mark" class="mark" width="50px" height="50px">
+  </a>
 </body>
 
 </html>
